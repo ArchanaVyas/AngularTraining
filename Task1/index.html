@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Simple Calculator</h1>
+    </header>
+    <main>
+        <div class="container" style="margin-left:450px">
+           <form name="clc">
+            <input type="text" name="display" style="color: black;"><br>
+            <input class="btn" type="button" value="C" onclick="clc.display.value=''" id="del">
+            <input class="btn" type="button" value="/" onclick="clc.display.value+='/'">
+            <input class="btn" type="button" value="*" onclick="clc.display.value+='*'">
+            <input class="btn" type="button" value="<-" onclick="clc.display.value= clc.display.value.slice(0,-1)"><br>
+
+            <input class="btn" type="button" value="7" onclick="clc.display.value+='7'">
+            <input class="btn" type="button" value="8" onclick="clc.display.value+='8'">
+            <input class="btn" type="button" value="9" onclick="clc.display.value+='9'">
+            <input class="btn" type="button" value="-" onclick="clc.display.value+='-'"><br>
+
+            <input class="btn" type="button" value="4" onclick="clc.display.value+='4'">
+            <input class="btn" type="button" value="5" onclick="clc.display.value+='5'">
+            <input class="btn" type="button" value="6" onclick="clc.display.value+='6'">
+            <input class="btn" type="button" value="+" onclick="clc.display.value+='+'"><br>
+
+            <input class="btn" type="button" value="1" onclick="clc.display.value+='1'">
+            <input class="btn" type="button" value="2" onclick="clc.display.value+='2'">
+            <input class="btn" type="button" value="3" onclick="clc.display.value+='3'">
+            <input class="btn" type="button" value="%" onclick="clc.display.value+='%'"><br>
+
+            <input class="btn" type="button" value="." onclick="clc.display.value+='.'">
+            <input class="btn" type="button" value="0" onclick="clc.display.value+= '0'">
+            <input class="equal" type="button" value="=" onclick="clc.display.value= eval(clc.display.value)">
+           </form> 
+        </div>
+        
+    </main>
+    <footer>
+        <p>&copy;Archana Vyas</p>
+    </footer>
+</body>
+</html>

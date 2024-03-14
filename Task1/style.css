@@ -1,0 +1,53 @@
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: black;
+}
+
+input {
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  color: chartreuse;
+}
+
+.btn {
+  width: 85px;
+  height: 70px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  background: transparent;
+  border-color: white;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+}
+
+.equal {
+  width: 170px;
+  height: 70px;
+  background: transparent;
+  text-align: center;
+  cursor: pointer;
+  font-size: 25px;
+  border-color: white;
+}
+
+footer {
+  text-align: center;
+  color: white;
+}
+
+
+
+
+
+
+
