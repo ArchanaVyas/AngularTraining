@@ -1,17 +1,18 @@
+
 body {
   margin: 0px;
   padding: 0px;
   background-color: rgb(245, 245, 194);
 }
-
-header {
+header{
   margin: auto;
   padding: 10px;
   text-align: center;
   color: black;
+
 }
 
-.container {
+.container{
   margin: auto;
   background-color: black;
   height: 540px;
@@ -19,17 +20,19 @@ header {
   padding: 20px;
   border: 2px solid white;
   border-radius: 20px;
+  
 }
-
 input {
   font-size: 25px;
   padding: 20px;
   text-align: center;
   border-radius: 15px;
   margin-bottom: 15px;
+  
+  
 }
 
-.sbtn {
+.sbtn{
   width: 85px;
   height: 70px;
   font-size: 25px;
@@ -40,12 +43,12 @@ input {
   border-color: orange;
   color: orange;
 }
-
-.sbtn:hover {
+.sbtn:hover{
   background: white;
   color: black;
   border-color: black;
 }
+
 
 .btn {
   width: 85px;
@@ -76,7 +79,6 @@ input {
   background-color: white;
   color: black;
 }
-
 .equal:hover {
   background: black;
   color: white;
@@ -87,4 +89,11 @@ footer {
   padding: 10px;
   text-align: center;
   color: rgb(241, 57, 118);
-}/*# sourceMappingURL=style.css.map */
+}
+
+
+
+
+
+
+
