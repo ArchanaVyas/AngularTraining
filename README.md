@@ -3,7 +3,7 @@
 
 ### Task 1: Simple Calculator  
 - **Description:** Implemented a basic calculator using HTML, CSS, and JavaScript.  
-- **Files:** 'index.html', 'style.css'  
+- **Files:** 'index.html', 'style.css', 'style.scss', 'style.css.map', 
 
 ### Task 2A: Small Array Practical  
 - **Description:** Implementation of a small practical task related to arrays.  
