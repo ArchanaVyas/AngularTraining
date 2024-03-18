@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.container{
+    max-width: auto;
+    margin: auto;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    padding: 10px;
+}
+.Todo-List{
+    width: 100%;
+    max-width: 540px;
+    background: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.Todo-List h2{
+    color: #9b59b6;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.Todo-List h2 img{
+    width: 40px;
+    margin-left: 10px;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: antiquewhite;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #9b59b6;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+ul li{
+    list-style: none;
+    display: flex;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 15px;
+    background-image: url(images/uncheck.png);
+    background-size: cover;
+    background-position: center;
+    left: 6px;
+    top: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(images/check-mark.png);
+}
+ul li span{
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 30px;
+}
+ul li span:hover{
+    background: lightgray;
+}
+.popup-notification {
+    position: fixed;
+    top: 20px;
+    left: 620px;
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    display: none;
+    text-align: center;
+}
+.popup-message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 20px;
+}
+
+.popup-notification.show {
+    display: block;
+}
+

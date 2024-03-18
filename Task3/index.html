@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-Do List</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="Todo-List">
+                <h2>To-Do List <img src="images/to-do-list.png"></h2>
+                <div class="search-box">
+                    <input type="text" id="input-box" placeholder="Enter Task">
+                    <button onclick="addTask()">Add</button>
+                </div>
+
+                <div id="popup-notification" class="popup-notification">
+                    <span id="popup-message"></span>
+                </div>
+                
+                <ul id="list-container">
+                    <!-- <li class="checked">Task1</li>
+                    <li>Task2</li>
+                    <li>Task3</li> -->
+                </ul>
+            </div>
+
+        </div>
+        <script src="ToDoList.js"></script>
+    </body>
+</html>

@@ -1,49 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Calculator</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="calc.js"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- Header Start -->
     <header>
-        <h1>Simple Calculator</h1>
+      <h1>Simple Calculator</h1>
     </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
     <main>
-        <div class="container">
-           <form name="clc">
-            <input type="text" name="display" style="color: black; height: 70px"><br>
-            <input class="sbtn" type="button" value="C"  >
-            <input class="sbtn" type="button" value="/"  >
-            <input class="sbtn" type="button" value="*"  >
-            <input class="sbtn" type="button" value="<-" ><br>
+      <div class="container">
+        <form name="clc">
+          <div>
+            <input
+              id="result" class="=display" type="text" name="display"/>
+          </div>
 
-            <input class="btn" type="button" value="7" >
-            <input class="btn" type="button" value="8" >
-            <input class="btn" type="button" value="9" >
-            <input class="sbtn" type="button" value="-" ><br>
+          <div>
+            <input id="button-clear" class="calc-operation" type="button" value="C" onclick = "Clear()"/>
+            <input id="button-division" class="calc-operation" type="button" value="/" onclick = "Solve('/')"/>
+            <input id="button-multiply" class="calc-operation" type="button" value="*" onclick = "Solve('*')"/>
+            <input id="button-back" class="calc-operation" type="button" value="<-" onclick ="Back('<-')"/>
+          </div>
 
-            <input class="btn" type="button" value="4" >
-            <input class="btn" type="button" value="5" >
-            <input class="btn" type="button" value="6" >
-            <input class="sbtn" type="button" value="+" ><br>
+          <div>
+            <input id="button-number 7" class="numbers" type="button" value="7" onclick = "Solve('7')"/>
+            <input id="button-number 8" class="numbers" type="button" value="8" onclick = "Solve('8')"/>
+            <input id="button-number 9" class="numbers" type="button" value="9" onclick = "Solve('9')"/>
+            <input id="button-subtract" class="calc-operation" type="button" value="-" onclick = "Solve('-')"/>
+          </div>
 
-            <input class="btn" type="button" value="1" >
-            <input class="btn" type="button" value="2" >
-            <input class="btn" type="button" value="3" >
-            <input class="sbtn" type="button" value="%" ><br>
+          <div>
+            <input id="button-number 4" class="numbers" type="button" value="4" onclick = "Solve('4')"/>
+            <input id="button-number 5" class="numbers" type="button" value="5" onclick = "Solve('5')"/>
+            <input id="button-number 6" class="numbers" type="button" value="6" onclick = "Solve('6')"/>
+            <input id="button-add" class="calc-operation" type="button" value="+" onclick = "Solve('+')"/>
+          </div>
 
-            <input class="sbtn" type="button" value="." >
-            <input class="btn" type="button" value="0" >
-            <input class="equal" type="button" value="=" >
-           </form> 
-        </div>
+          <div>
+            <input id="button-number 1" class="numbers" type="button" value="1" onclick = "Solve('1')"/>
+            <input id="button-number 2" class="numbers" type="button" value="2" onclick = "Solve('2')"/>
+            <input id="button-number 3" class="numbers" type="button" value="3" onclick = "Solve('3')"/>
+            <input id="button-modulus" class="calc-operation" type="button" value="%" onclick = "Solve('%')"/>
+          </div>
         
+          <div>
+            <input id="button-decimal" class="calc-operation" type="button" value="." onclick = "Solve('.')"/>
+            <input id="button-number 0" class="numbers" type="button" value="0" onclick = "Solve('0')"/>
+            <input id="button-equal" class="equal" type="button" value="=" onclick = "Result()"/>
+          </div>
+        </form>
+      </div>
     </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
     <footer>
-        <p>&copy;Archana Vyas</p>
+      <p>&copy;Archana Vyas</p>
     </footer>
-</body>
+    <!-- Footer End -->
+    <script src="calc.js"></script>
+  </body>
 </html>

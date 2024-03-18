@@ -1,12 +1,17 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-color: rgb(245, 245, 194);
+  background-color: lightgray;
+  height: 100vh;
+  width: 100%;
 }
 
 header {
+  background-color: whitesmoke;
   margin: auto;
   padding: 10px;
+  width: 100%;
+  height: 70px;
   text-align: center;
   color: black;
 }
@@ -14,11 +19,13 @@ header {
 .container {
   margin: auto;
   background-color: black;
-  height: 540px;
+  height: 500px;
   width: 355px;
   padding: 20px;
   border: 2px solid white;
   border-radius: 20px;
+  position: relative;
+  flex: 1;
 }
 
 input {
@@ -29,7 +36,11 @@ input {
   margin-bottom: 15px;
 }
 
-.sbtn {
+.display {
+  color: black;
+}
+
+.calc-operation {
   width: 85px;
   height: 70px;
   font-size: 25px;
@@ -37,17 +48,17 @@ input {
   text-align: center;
   cursor: pointer;
   background: transparent;
-  border-color: orange;
+  border: 2px solid orange;
   color: orange;
 }
 
-.sbtn:hover {
+.calc-operation:hover {
   background: white;
   color: black;
-  border-color: black;
+  border: 2px solid black;
 }
 
-.btn {
+.numbers {
   width: 85px;
   height: 70px;
   font-size: 25px;
@@ -55,14 +66,14 @@ input {
   text-align: center;
   cursor: pointer;
   background: transparent;
-  border-color: chartreuse;
+  border: 2px solid chartreuse;
   color: chartreuse;
 }
 
-.btn:hover {
+.numbers:hover {
   background: white;
   color: black;
-  border-color: black;
+  border: 2px solid black;
 }
 
 .equal {
@@ -72,7 +83,7 @@ input {
   text-align: center;
   cursor: pointer;
   font-size: 25px;
-  border-color: white;
+  border: 2px solid white;
   background-color: white;
   color: black;
 }
@@ -80,11 +91,15 @@ input {
 .equal:hover {
   background: black;
   color: white;
+  border: 2px solid black;
 }
 
 footer {
-  margin: auto;
+  margin-top: auto;
+  background-color: whitesmoke;
   padding: 10px;
+  width: 100%;
   text-align: center;
-  color: rgb(241, 57, 118);
-}/*# sourceMappingURL=style.css.map */
+  color: black;
+  bottom: 0;
+} /*# sourceMappingURL=style.css.map */
