@@ -16,3 +16,6 @@
 ### Task 3: TODO List Functionality  
 - **Description:** Created a TODO list functionality using DOM Manipulation methods.  
 - **Files:**  'index.html', 'style.css', 'ToDoList.js', folder-'images'
+### Task 4: Advanced Js Assignment
+- **Description:** solved the assignment questions.
+- **Files:** 'Assignment.js', 'Advanced Javascript Assignment.docx' 
