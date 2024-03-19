@@ -2,10 +2,9 @@ body {
   margin: 0px;
   padding: 0px;
   background-color: lightgray;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
 }
-
 header {
   background-color: whitesmoke;
   margin: auto;
@@ -17,7 +16,9 @@ header {
 }
 
 .container {
-  margin: auto;
+  margin-top: 30px;
+  margin-left:auto;
+  margin-right: auto;
   background-color: black;
   height: 500px;
   width: 355px;
@@ -25,7 +26,8 @@ header {
   border: 2px solid white;
   border-radius: 20px;
   position: relative;
-  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 input {
@@ -83,14 +85,14 @@ input {
   text-align: center;
   cursor: pointer;
   font-size: 25px;
-  border: 2px solid white;
-  background-color: white;
+  border: 2px solid black;
+  background-color: orange;
   color: black;
 }
 
 .equal:hover {
-  background: black;
-  color: white;
+  background: white;
+  color: black;
   border: 2px solid black;
 }
 
@@ -101,5 +103,8 @@ footer {
   width: 100%;
   text-align: center;
   color: black;
+  display: flex;
+  position: absolute;
+  justify-content: center;
   bottom: 0;
 } /*# sourceMappingURL=style.css.map */

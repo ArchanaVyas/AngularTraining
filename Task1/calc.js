@@ -1,17 +1,17 @@
-function Solve(val) {
+function solve(val) {
     var v = document.getElementById('result');
     v.value += val;
  }
- function Result() {
+ function calculateResult() {
     var num1 = document.getElementById('result').value;
     var num2 = eval(num1);
     document.getElementById('result').value = num2;
  }
- function Clear() {
+ function clearInput() {
     var inp = document.getElementById('result');
     inp.value = '';
  }
- function Back() {
+ function removeLastCharacter() {
     var ev = document.getElementById('result');
     ev.value = ev.value.slice(0,-1);
  }
