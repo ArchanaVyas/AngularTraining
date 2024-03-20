@@ -1,51 +1,64 @@
-let lastOperator = ""; // To store the last operator clicked
-let evaluated = false; // Flag to track whether the expression has been evaluated
+let lastResult = 0; // Previous result
+let lastOperator = ""; // Last operator clicked
+let evaluated = false; // Flag for evaluated expression
 
 function solve(val) {
    var v = document.getElementById("result");
    var currentValue = v.value;
-
-   // Check if the evaluated flag is true, indicating that the result is displayed
+   
+   // If the current value is "ERROR", replace "ERROR" with the clicked number
+   if (currentValue === "ERROR" && !isNaN(Number(val))) {
+      v.value = val;
+      return;
+   }
+   // Reset input value if result displayed
    if (evaluated) {
-      // Reset the input value to the new number and reset the evaluated flag
       v.value = val;
       evaluated = false;
    } else {
-      // Check if the clicked value is an operator
-      if (["+", "-", "*", "/", "%"].includes(val)) {
+      // Append clicked value to input
+      if (["+", "-", "*", "/", "%", "."].includes(val)) {
+         // if input is empty append 0 before operator
+         if (currentValue === "") {
+            v.value = "0" + val;
+            return;
+         }
+         // Check if current value is just '0', replace it with the new value
+         if (currentValue === "0" && val !== ".") {
+            v.value = val;
+            return;
+         }
          // Check if the last character in the input is an operator
-         if (["+", "-", "*", "/", "%"].includes(currentValue.slice(-1))) {
-            // If the last character is an operator, replace it with the new operator
+         if (["+", "-", "*", "/", "%", "."].includes(currentValue.slice(-1))) {
+            // Replace with new operator
             currentValue = currentValue.slice(0, -1);
          }
+         lastOperator = val; // Update last operator
+      } else if (currentValue === "0") { // Check if current value is just '0'
+         v.value = val; // Replace '0' with the new value
+         return;
       }
-      // Append the clicked value to the input
+      // Append clicked value to input
       v.value = currentValue + val;
    }
 }
 
+
 function calculateResult() {
    var v = document.getElementById("result");
    var expression = v.value;
-   var num2 = eval(expression);
-   v.value = num2;
-   evaluated = true; // Set the evaluated flag to true after evaluating the expression
-   lastOperator = ""; // Reset the last operator after displaying the result
-   updateHistory(expression + " = " + num2);
-}
-
-// Function to update history
-function updateHistory(expression) {
-   var historyElement = document.getElementById("history");
-   historyElement.textContent += expression + "\n";
-}
+   try {
+     var num2 = eval(expression);
+     lastResult = num2; // Store current result
+     v.value = num2;
+     evaluated = true; // Set evaluated flag
+   } catch (error) {
+     v.value = "ERROR"; // Display "ERROR" if an error occurs during evaluation
+   }
+ }
+ 
 
 function clearInput() {
-   var inp = document.getElementById("result");
-   inp.value = "";
-}
-
-function removeLastCharacter() {
-   var ev = document.getElementById("result");
-   ev.value = ev.value.slice(0, -1);
+  var inp = document.getElementById("result");
+  inp.value = "";
 }

@@ -1,3 +1,7 @@
+
+
+
+
 body {
   margin: 0px;
   padding: 0px;
@@ -36,6 +40,7 @@ input {
   text-align: center;
   border-radius: 15px;
   margin-bottom: 15px;
+  color: black;
 }
 
 .display {
@@ -93,7 +98,7 @@ input {
 }
 
 .equal:hover {
-  background: black;
+  background: chartreuse;
   color: white;
   border: 2px solid black;
 }
@@ -101,12 +106,12 @@ input {
 footer {
   margin-top: auto;
   background-color: whitesmoke;
+  left: 0;
+  bottom: 0;
   padding: 10px;
   width: 100%;
   text-align: center;
   color: black;
-  display: flex;
-  position: absolute;
+  position: fixed;
   justify-content: center;
-  bottom: 0;
 } /*# sourceMappingURL=style.css.map */

@@ -24,7 +24,7 @@
         <!-- Display area for the calculator -->
         <div class="display-container">
           <!-- Display input -->
-          <input id="result" class="=display" type="text" name="display" readonly />
+          <input id="result" class="=display" type="text" name="display" readonly placeholder="0" />
         </div>
 
         <!-- Calculator buttons -->
@@ -34,8 +34,7 @@
             <input id="button-clear" class="calc-operation" type="button" value="C" onclick="clearInput()" />
             <input id="button-division" class="calc-operation" type="button" value="/" onclick="solve('/')" />
             <input id="button-multiply" class="calc-operation" type="button" value="*" onclick="solve('*')" />
-            <input id="button-back" class="calc-operation" type="button" value="<-"
-              onclick="removeLastCharacter('<-')" />
+            <input id="button-back" class="calc-operation" type="button" value="<-" onclick="removeLastCharacter('<-')" />
           </div>
 
           <div>
