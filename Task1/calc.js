@@ -62,3 +62,11 @@ function clearInput() {
   var inp = document.getElementById("result");
   inp.value = "";
 }
+
+function removeLastCharacter() {
+   var v = document.getElementById("result");
+   var currentValue = v.value;
+   if (currentValue.length > 0) {
+      v.value = currentValue.slice(0, -1);
+   }
+}
