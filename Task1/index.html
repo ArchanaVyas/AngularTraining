@@ -31,36 +31,37 @@
         <div class="buttons-container">
           <!-- Buttons go here -->
           <div>
-            <input id="button-clear" class="calc-operation" type="button" value="C" onclick="clearInput()" />
-            <input id="button-division" class="calc-operation" type="button" value="/" onclick="solve('/')" />
-            <input id="button-multiply" class="calc-operation" type="button" value="*" onclick="solve('*')" />
-            <input id="button-back" class="calc-operation" type="button" value="<-" onclick="removeLastCharacter('<-')" />
+            <input id="button-clear" class="calc-operation" type="button" value="AC" onclick="clearInput()" />
+            <input id="button-back" class="calc-operation" type="button" value="DEL" onclick="removeLastCharacter('<-')" />
+            <input id="button-division" class="calc-operation" type="button" value="%" onclick="solve('%')" />
+            <input id="button-multiply" class="calc-operation" type="button" value="/" onclick="solve('/')" />
           </div>
 
           <div>
             <input id="button-number-seven" class="numbers" type="button" value="7" onclick="solve('7')" />
             <input id="button-number-eight" class="numbers" type="button" value="8" onclick="solve('8')" />
             <input id="button-number-nine" class="numbers" type="button" value="9" onclick="solve('9')" />
-            <input id="button-subtract" class="calc-operation" type="button" value="-" onclick="solve('-')" />
+            <input id="button-subtract" class="calc-operation" type="button" value="x" onclick="solve('x')" />
           </div>
 
           <div>
             <input id="button-number-four" class="numbers" type="button" value="4" onclick="solve('4')" />
             <input id="button-number-five" class="numbers" type="button" value="5" onclick="solve('5')" />
             <input id="button-number-six" class="numbers" type="button" value="6" onclick="solve('6')" />
-            <input id="button-add" class="calc-operation" type="button" value="+" onclick="solve('+')" />
+            <input id="button-add" class="calc-operation" type="button" value="-" onclick="solve('-')" />
           </div>
 
           <div>
             <input id="button-number-one" class="numbers" type="button" value="1" onclick="solve('1')" />
             <input id="button-number-two" class="numbers" type="button" value="2" onclick="solve('2')" />
             <input id="button-number-three" class="numbers" type="button" value="3" onclick="solve('3')" />
-            <input id="button-modulus" class="calc-operation" type="button" value="%" onclick="solve('%')" />
+            <input id="button-modulus" class="calc-operation" type="button" value="+" onclick="solve('+')" />
           </div>
 
           <div>
-            <input id="button-decimal" class="calc-operation" type="button" value="." onclick="solve('.')" />
+            <input id="button-history" class="history" type="button" value="His." onclick="solve('His.')" />
             <input id="button-number-zero" class="numbers" type="button" value="0" onclick="solve('0')" />
+            <input id="button-decimal" class="calc-operation" type="button" value="." onclick="solve('.')" />
             <input id="button-equal" class="equal" type="button" value="=" onclick="calculateResult()" />
           </div>
         </div>
